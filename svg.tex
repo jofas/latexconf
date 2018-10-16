@@ -1,0 +1,34 @@
+% Header for compiling tikz to svg.
+% compile with:
+%               latex <project>
+%               dvisvgm <project>
+
+\documentclass[dvisvgm]{standalone}
+
+% Graphiken
+\usepackage{tikz}
+
+% TikZ Bibliotheken
+\usetikzlibrary{
+    arrows,
+    arrows.meta,
+    decorations,
+    backgrounds,
+    positioning,
+    fit,
+    petri,
+    shadows,
+    datavisualization.formats.functions,
+    calc,
+    shapes,
+    shapes.multipart
+}
+
+\begin{document}
+\textcolor{white}{workaround}
+\begin{tikzpicture}
+
+  % picture right here
+
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,69 @@
+% Fuer ERM "Kraehenfuss-Notation"
+
+% Arrow tips {{{
+
+  % sep_tip (empty space between node and tip) {{{
+  \tikzset{
+    sep_tip/.tip = {Kite[white,length=0.1,sep=16pt]}
+  }
+  % }}}
+
+  % one {{{
+  \tikzset{
+    one /.tip = {|[scale=2]Square[length=8pt,width=1pt]}
+  }
+  % }}}
+
+  % c_one {{{
+  \tikzset{
+    c_one /.tip = {Circle[fill=white,scale=1.5]one}
+  }
+  % }}}
+
+  % n {{{
+  \tikzset{
+    n /.tip = {
+      |[scale=2,sep=-2pt]
+      Straight Barb[reversed,length=10pt,width=15pt,sep=-12pt]
+      Square[length=12pt,width=1pt]
+    }
+  }
+  % }}}
+
+  % cn {{{
+  \tikzset{
+    cn /.tip = {Circle[fill=white,scale=1.5]n}
+  }
+  % }}}
+
+% }}}
+
+% Entity styles {{{
+
+  % entity {{{
+  \tikzset{
+    entity/.style={
+      rectangle split,
+      rectangle split ignore empty parts=true,
+      rectangle split parts=2,
+      rectangle split part align = {center, left},
+      label=#1,
+      rounded corners,
+      solid,
+      draw
+    }
+  }
+  % }}}
+
+  % eerm-subtype {{{
+  \tikzset{
+    eerm-subtype/.style={
+      semicircle,
+      fill=white,
+      draw,
+      label=\textbf{#1}
+    }
+  }
+  % }}}
+
+% }}}
