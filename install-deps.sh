@@ -2,4 +2,4 @@
 
 zypper install texlive texlive-appendix texlive-diagbox \
   texlive-pgfornament texlive-here texlive-datetime texlive-standalone \
-  potrace
+  texlive-svg potrace
